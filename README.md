@@ -11,3 +11,5 @@ This project demonstrates the creation and management of a SQL database to store
 - SQL code script (`products.sql`)
 - Project report (`Product_Sales_Management_SQL_Report.docx`)
 - Screenshots showing query execution
+- ## Connect with me:
+You can connect with me on [LinkedIn](https://www.linkedin.com/in/kalimi-kanakavarahalu-43b20333a/).
