@@ -1,0 +1,23 @@
+# Questions:
+SELECT*FROM products;
+SELECT*FROM products WHERE quantity_sold>100;
+SELECT*FROM products WHERE product_id LIKE'A%';
+SELECT*FROM products WHERE product_id LIKE'%B%';
+SELECT*FROM products ORDER BY quantity_sold DESC LIMIT 1;
+SELECT*FROM products WHERE sales_date>'2025-01-01';
+SELECT*FROM products WHERE YEAR(sales_date)=2025;
+SELECT*FROM products WHERE MONTH(sales_date)=4;
+SELECT*FROM products WHERE quantity_sold BETWEEN 30 AND 160;
+SELECT COUNT(*)AS total_products FROM products;
+# SQL Code:
+CREATE DATABASE products;
+USE products;
+CREATE TABLE products (
+    product_id VARCHAR(50),
+    quantity_sold INT,
+    sales_date DATE
+);
+INSERT INTO products VALUES
+('A123',150,'2025-04-30'),
+('B234',30,'2025-04-20'),
+('C567',200,'2025-04-26');
